@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="./entry.css"/>
+</head>
+<body>
+
+<div id="data-con">
+    <p>INPUT:</p>
+    <textarea 
+        id="data" 
+        cols="50" 
+        rows="10" 
+        placeholder="Enter data ( readline() )" 
+        onchange="repeat()"
+    ></textarea>
+    <input type="button" class="btn" id="excute" value="EXCUTE" onclick="excute()"/>
+    <input type="button" class="btn" id="update" value="RELOAD" onclick="update()"/>
+</div>
+<div id="result-con">
+    <p>OUTPUT:</p>
+    <textarea 
+        id="result" 
+        cols="50" 
+        rows="10" 
+        placeholder="Output data ( print() )" 
+        readonly="readonly"
+    ></textarea>
+</div>
+
+
+<script src="./entry.js"></script>
+</body>
+</html>

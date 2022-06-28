@@ -18,30 +18,20 @@ const readline = function () {
         line.push(data[ii]);
       }
       line = line.reverse();
-      // for (let ii = 0; ii < line.length; ii++) {
-      //   if (line[ii] === " " || line[ii] === ",") {
-      //     line.splice(ii, 1);
-      //   }
-      // }
       return line.join(""); //返回的是字符串类型
-      // break;
     }
   }
 };
 
 // 重测数据
 const repeat = function () {
-  // const con = document.getElementById("data").value;
-  // window.location = "./entry.html";
-  // document.getElementById('data').innerHTML = con;
-  // $("#data").val(con);
   readline.count = undefined;
   document.getElementById("result").innerHTML = "";
 };
 
 // 更新页面 清空输入框
 const update = function () {
-  window.location = "./entry.html";
+  window.location = "./index.html";
 };
 
 // 输出函数

@@ -1,20 +1,8 @@
-
-/*
-*读取数据用readline(),读进来的是字符串
-*输出数据用print()
-*/
-
-// var num1 = readline();	//读第一行
-// var num2 = readline();	//读第二行
-// print(parseInt(num1)+parseInt(num2));	//输出
+// 跟牛客的一样，读取数据用的是readline()，读进来的是字符串，输出用的是print()
 
 /**
- * 示例
- * HJ14 字符串排序
-*/
-/* 
-输入：
-9
+ * 示例：HJ14 字符串排序
+ * 输入：9
 cap
 to
 cat
@@ -24,14 +12,25 @@ too
 up
 boat
 boot
-*/
+ * 输出：boat
+boot
+cap
+card
+cat
+to
+too
+two
+up
+ */
 
-function fun() {
-    let index = readline()
-    let arr = []
-    for(let i = 0; i < index; i++) {
-        arr.push(readline())
-    }
-    arr.sort().forEach(item => print(item))
+function func() {
+  const n = readline();
+  const arr = [];
+  for (let i = 0; i < n; i++) {
+    arr.push(readline());
+  }
+  arr.sort().map(print);
 }
-fun()
+while ((line = readline())) {
+  func(line);
+}

@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="zh-hans">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>牛客网V8 JS模拟环境</title>
+  <meta charset="utf-8">
+  <title>NowCoder Test Env for JavaScript V8</title>
+  <meta name="description" content="牛客网JavaScript V8模拟环境">
+  <meta name="keywords" content="牛客网,JavaScript V8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://www.nowcoder.com/favicon.ico">
   <style>
     textarea {
       display: block;
@@ -14,14 +16,13 @@
 </head>
 
 <body>
-  <p>提供 readline() 和 print() 接口的模拟环境</p>
-  <p><a href="https://www.bysb.net/3270.html">浏览发布页面</a></p>
-  Timeout :
-  <input type="number" value="2000" id="timeout">
-  <textarea name="code" id="code" cols="100" rows="30" placeholder="//code"></textarea>
-  <textarea name="input" id="input" cols="100" rows="10" placeholder="//input"></textarea>
-  <button id="runBtn">RUN</button>
-  <textarea name="output" id="output" cols="100" rows="5" placeholder="//output"></textarea>
+  <p>牛客网JavaScript V8模拟环境，提供<code>readline()</code>和<code>print()</code>接口</p>
+  超时限制（毫秒）:
+  <input type="number" value="2000" id="timeout" />
+  <textarea name="code" id="code" cols="100" rows="25" placeholder="测试代码"></textarea>
+  <textarea name="input" id="input" cols="100" rows="5" placeholder="输入用例"></textarea>
+  <button id="runBtn">执行代码</button>
+  <textarea name="output" id="output" cols="100" rows="5" placeholder="输出结果"></textarea>
 </body>
 <script src="./script.js"></script>
 

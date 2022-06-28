@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NowCoder Test Env for JavaScript V8</title>
+    <meta name="description" content="牛客网JavaScript V8模拟环境">
+    <meta name="keywords" content="牛客网,JavaScript V8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://www.nowcoder.com/favicon.ico">
+    <link rel="stylesheet" href="./entry.css" />
+</head>
+
+<body>
+    <div id="data-con">
+        <p>输入用例：</p>
+        <textarea id="data" cols="50" rows="10" placeholder="Enter data ( readline() )" onchange="repeat()"></textarea>
+        <input type="button" class="btn" id="excute" value="EXCUTE" onclick="excute()" />
+        <input type="button" class="btn" id="update" value="RELOAD" onclick="update()" />
+    </div>
+    <div id="result-con">
+        <p>输出结果：</p>
+        <textarea id="result" cols="50" rows="10" placeholder="Output data ( print() )" readonly="readonly"></textarea>
+    </div>
+    <script src="./entry.js"></script>
+</body>
+
+</html>
